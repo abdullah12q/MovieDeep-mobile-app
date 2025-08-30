@@ -32,10 +32,12 @@ You can track trending movies, search for specific titles, save favorites, and v
 
 ## 📱 Screenshots
 
-![Home Screen](./assets/screenshots/home.png)
-![Saved Screen](./assets/screenshots/saved.png)
-![Search Screen](./assets/screenshots/search.png)
-![Details Screen](./assets/screenshots/details.png)
+<p align="left">
+  <img src="./assets/screenshots/home.png" alt="Home Screen" width="200" />
+  <img src="./assets/screenshots/search.png" alt="Search Screen" width="200" />
+  <img src="./assets/screenshots/details.png" alt="Details Screen" width="200" height="444.4"/>
+  <img src="./assets/screenshots/saved.png" alt="Saved Screen" width="200" />
+</p>
 
 ---
 
