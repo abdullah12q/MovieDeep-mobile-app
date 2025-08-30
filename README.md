@@ -1,50 +1,88 @@
-# Welcome to your Expo app 👋
+# 🎬 MovieDeep
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+MovieDeep is a **React Native mobile app built with Expo** that lets you discover and explore your favorite movies.  
+You can track trending movies, search for specific titles, save favorites, and view detailed movie information including trailers and official sites.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
 
-   ```bash
-   npm install
-   ```
+- Discover movies powered by **TMDB RESTful APIs** (over 1,000,000+ movies available)
+- Track trending movies (updates dynamically based on popularity algorithm)
+- Save your favorite movies for quick access
+- Search for any movie by title
+- View full movie details with:
+  - Trailer links
+  - Homepage/official site links (if available)
+- Backend powered by **Appwrite**
+- Persistent storage with **AsyncStorage**
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Tech Stack
 
-In the output, you'll find options to open the app in a
+- **React Native** (Expo Managed Workflow)
+- **Typescript** for type safety
+- **Tailwind CSS (Nativewind)** for styling
+- **Expo Router** (Stack + Tabs navigation)
+- **Appwrite** backend service
+- **Async-Storage** for persistent local storage
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📱 Screenshots
 
-## Get a fresh project
+![Home Screen](./assets/screenshots/home.png)
+![Saved Screen](./assets/screenshots/saved.png)
+![Search Screen](./assets/screenshots/search.png)
+![Details Screen](./assets/screenshots/details.png)
 
-When you're ready, run:
+---
+
+## 📂 Project Setup
+
+Clone the repo:
 
 ```bash
-npm run reset-project
+git clone https://github.com/your-username/MovieDeep.git
+cd MovieDeep
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Install dependencies:
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Run the app:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🔑 Environment Variables
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Create a `.env` file in the root directory with:
+
+```
+EXPO_PUBLIC_MOVIE_API_KEY=your_api_key_here
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_project_id
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=your_db_id
+EXPO_PUBLIC_APPWRITE_COLLECTION_ID=your_collection_id
+EXPO_PUBLIC_APPWRITE_ENDPOINT=your_appwrite_endpoint
+```
+
+---
+
+## 👨‍💻 Acknowledgments
+
+- **JS Mastery** – for Figma design, icons, and assets
+- **TMDB** – for the movie data API
+
+---
+
+## 📌 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
