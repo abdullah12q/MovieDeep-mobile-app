@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "MovieDeep",
+    "slug": "MovieDeep",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icons/app-logo.png",
+    "splash": {
+      "image": "./assets/icons/splash.png",
+      "imageWidth": 200
+    },
+    "scheme": "movies",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/app-logo.png"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/icons/app-logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icons/splash.png",
+          "imageWidth": 200
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
