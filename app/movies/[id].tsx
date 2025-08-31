@@ -164,7 +164,7 @@ export default function MovieDeatils() {
             </TouchableOpacity>
           )}
           <View>
-            <Text className="text-2xl text-white">{movie?.title}</Text>
+            <Text className="text-2xl text-white">{movie?.title} </Text>
             <Text className="mt-2 text-sm text-light-200">
               {movie?.release_date.split("-")[0]}
               {"   •   "}
@@ -195,7 +195,7 @@ export default function MovieDeatils() {
 
           <View className="gap-1 my-2">
             <Text className="text-sm text-light-200">Overview</Text>
-            <Text className="text-sm text-white">{movie?.overview}</Text>
+            <Text className="text-sm text-white">{movie?.overview} </Text>
           </View>
 
           <View className="flex-row justify-between w-full pr-5 my-2">
