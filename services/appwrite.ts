@@ -17,13 +17,32 @@ export async function updateSearchCount(query: string, movie: Movie) {
 
     if (result.documents.length > 0) {
       const existingMovie = result.documents[0];
+
+      const updateData: any = {
+        count: existingMovie.count + 1,
+      };
+
+      if (
+        existingMovie.movie_id !== movie.id ||
+        existingMovie.title !== movie.title ||
+        JSON.stringify(existingMovie.genre_ids) !==
+          JSON.stringify(movie.genre_ids) ||
+        existingMovie.vote_average !== movie.vote_average ||
+        existingMovie.poster_url !==
+          `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+      ) {
+        updateData.movie_id = movie.id;
+        updateData.title = movie.title;
+        updateData.genre_ids = movie.genre_ids;
+        updateData.vote_average = movie.vote_average;
+        updateData.poster_url = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+      }
+
       await database.updateDocument(
         DATABASE_ID,
         COLLECTION_ID,
         existingMovie.$id,
-        {
-          count: existingMovie.count + 1,
-        }
+        updateData
       );
     } else {
       await database.createDocument(DATABASE_ID, COLLECTION_ID, ID.unique(), {

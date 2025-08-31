@@ -19,6 +19,12 @@ You can track trending movies, search for specific titles, save favorites, and v
 
 ---
 
+## 📥 Download
+
+👉 [Download MovieDeep APK](https://github.com/abdullah12q/MovieDeep-mobile-app/releases/latest/download/MovieDeep-v1.0.0.apk)
+
+---
+
 ## 🛠️ Tech Stack
 
 - **React Native** (Expo Managed Workflow)

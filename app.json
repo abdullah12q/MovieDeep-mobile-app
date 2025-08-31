@@ -4,10 +4,10 @@
     "slug": "MovieDeep",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icons/app-logo.png",
+    "icon": "./assets/icons/app-icon.png",
     "splash": {
       "image": "./assets/icons/splash.png",
-      "imageWidth": 200
+      "backgroundColor": "#030014"
     },
     "scheme": "movies",
     "userInterfaceStyle": "automatic",
@@ -17,14 +17,16 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icons/app-logo.png"
+        "foregroundImage": "./assets/icons/app-icon.png",
+        "backgroundColor": "#030014"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.abdullah1q1q.MovieDeep"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/icons/app-logo.png"
+      "favicon": "./assets/icons/app-icon.png"
     },
     "plugins": [
       "expo-router",
@@ -32,12 +34,19 @@
         "expo-splash-screen",
         {
           "image": "./assets/icons/splash.png",
-          "imageWidth": 200
+          "backgroundColor": "#030014"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b1344805-171f-44db-9c5e-369d437247c8"
+      }
+    },
+    "owner": "abdullah1q1q"
   }
 }

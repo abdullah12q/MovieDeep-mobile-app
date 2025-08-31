@@ -30,7 +30,6 @@ export default function TabsLayout() {
         screenOptions={{
           headerShown: false,
           tabBarShowLabel: false,
-          tabBarHideOnKeyboard: true,
           tabBarStyle: {
             backgroundColor: "#0f0d23",
             borderRadius: 100,

@@ -18,10 +18,7 @@ export default function Index() {
     error: trendingError,
   } = useQuery({
     queryKey: ["movies", "trending"],
-    queryFn: async () => {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      return getTrendingMovies();
-    },
+    queryFn: getTrendingMovies,
   });
 
   const {

@@ -17,10 +17,7 @@ export default function Saved() {
     error,
   } = useQuery({
     queryKey: ["savedMovies", ids],
-    queryFn: async () => {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      return getSavedMovies(ids);
-    },
+    queryFn: () => getSavedMovies(ids),
   });
 
   return (
